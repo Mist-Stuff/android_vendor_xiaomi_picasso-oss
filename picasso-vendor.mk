@@ -488,6 +488,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/consumerir.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.lito.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/fingerprint.fpc.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.lito.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/fingerprint.goodix.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.lito.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
