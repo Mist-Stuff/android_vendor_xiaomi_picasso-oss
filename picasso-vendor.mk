@@ -267,8 +267,6 @@ PRODUCT_PACKAGES += \
     libaudioconfigstore \
     libqtigef \
     libssrec \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
     vendor.qti.hardware.audiohalext@1.0 \
     audio.primary.picasso \
     sound_trigger.primary.lito \
@@ -459,7 +457,7 @@ PRODUCT_PACKAGES += \
     libos \
     libsensorcal \
     libsensorslog \
-    libsn100u_fw \
+    libsn100u_fw-64SYMLINK \
     libsnpe_adsp \
     libsnpe_dsp_domains \
     libsnpe_dsp_domains_system \
@@ -486,6 +484,8 @@ PRODUCT_PACKAGES += \
     libvideofilter_only \
     libvidhance \
     libxmi_high_dynamic_range \
+    libsns_device_mode_skel-64SYMLINK \
+    libsns_low_lat_stream_skel-64SYMLINK \
     sensors.elliptic \
     sensors.ssc \
     sensors.touch \

@@ -245,50 +245,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsns_device_mode_skel",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so"],
-			shared_libs: ["libc", "libgcc", ],
-		},
-		android_arm: {
-			srcs: ["proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so"],
-			shared_libs: ["libc", "libgcc", ],
-		},
-	},
-	compile_multilib: "both",
-	relative_install_path: "rfsa/adsp",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsns_low_lat_stream_skel",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so"],
-			shared_libs: ["libc", "libgcc", ],
-		},
-		android_arm: {
-			srcs: ["proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so"],
-			shared_libs: ["libc", "libgcc", ],
-		},
-	},
-	compile_multilib: "both",
-	relative_install_path: "rfsa/adsp",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.audiohalext@1.0",
 	owner: "xiaomi",
 	strip: {
@@ -3611,7 +3567,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsn100u_fw",
+	name: "libsn100u_fw-64SYMLINK",
+	stem: "libsn100u_fw",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -4065,6 +4022,44 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsns_device_mode_skel-64SYMLINK",
+	stem: "libsns_device_mode_skel",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so"],
+			shared_libs: ["libc", "libgcc", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "rfsa/adsp",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsns_low_lat_stream_skel-64SYMLINK",
+	stem: "libsns_low_lat_stream_skel",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so"],
+			shared_libs: ["libc", "libgcc", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "rfsa/adsp",
 	prefer: true,
 	soc_specific: true,
 }
