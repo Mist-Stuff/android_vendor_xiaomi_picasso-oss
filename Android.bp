@@ -3509,6 +3509,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libsdk_sr",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsdk_sr.so"],
+			shared_libs: ["libOpenCL", "libdl", "libGLESv2", "libEGL", "libz", "liblog", "libm", "libc", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsensorcal",
 	owner: "xiaomi",
 	strip: {
@@ -3808,6 +3825,23 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libst_soft_isp_shared.so"],
 			shared_libs: ["libOpenCL", "liblog", "libm", "libdl", "libc++_shared", "libc", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libst_sr_models",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libst_sr_models.so"],
+			shared_libs: ["libm", "libc", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

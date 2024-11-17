@@ -450,6 +450,7 @@ PRODUCT_PACKAGES += \
     libnotifyaudiohal \
     libofflinelog \
     libos \
+    libsdk_sr \
     libsensorcal \
     libsensorslog \
     libsn100u_fw-64SYMLINK \
@@ -468,6 +469,7 @@ PRODUCT_PACKAGES += \
     libssc_default_listener \
     libssccalapi \
     libst_soft_isp_shared \
+    libst_sr_models \
     libswregistrationalgo \
     libsymphony-cpu \
     libsynx \
