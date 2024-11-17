@@ -262,7 +262,6 @@ PRODUCT_PACKAGES += \
     libacdbloader \
     libacdbrtac \
     libadiertac \
-    libadsprpc \
     libaudcal \
     libaudioconfigstore \
     libqtigef \
