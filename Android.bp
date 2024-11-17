@@ -12,28 +12,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "com.qti.sensor.picasso_wide_ov48b2q",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/camera/com.qti.sensor.picasso_wide_ov48b2q.so"],
-			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera/com.qti.sensor.picasso_wide_ov48b2q.so"],
-			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	relative_install_path: "camera",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.audiohalext@1.0-impl",
 	owner: "xiaomi",
 	strip: {
@@ -812,6 +790,24 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/camera/com.qti.sensor.picasso_s5k5e9yx04.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "camera",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qti.sensor.picasso_wide_ov48b2q",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/com.qti.sensor.picasso_wide_ov48b2q.so"],
 			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "libc", "libm", "libdl", ],
 		},
 	},

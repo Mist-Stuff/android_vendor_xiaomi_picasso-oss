@@ -211,10 +211,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/xiaomi/picasso/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/xiaomi/picasso/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
-    vendor/xiaomi/picasso/proprietary/vendor/lib/camera/com.qti.sensormodule.picasso_sunny_wide_ov48b2q.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.picasso_sunny_wide_ov48b2q.bin \
-    vendor/xiaomi/picasso/proprietary/vendor/lib/camera/com.qti.tuned.picasso_48m_sunny_front_depth_gc02m1_mono.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.picasso_48m_sunny_front_depth_gc02m1_mono.bin \
-    vendor/xiaomi/picasso/proprietary/vendor/lib/camera/com.qti.tuned.picasso_48m_sunny_rear_depth_gc02m1_mono.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.picasso_48m_sunny_rear_depth_gc02m1_mono.bin \
-    vendor/xiaomi/picasso/proprietary/vendor/lib/camera/com.qti.tuned.picasso_sunny_wide_ov48b2q.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.picasso_sunny_wide_ov48b2q.bin \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/camera/com.qti.sensormodule.picasso_ofilm_front_depth_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.picasso_ofilm_front_depth_gc02m1.bin \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/camera/com.qti.sensormodule.picasso_ofilm_front_s5k3t2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.picasso_ofilm_front_s5k3t2.bin \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/camera/com.qti.sensormodule.picasso_ofilm_macro_s5k5e9yx04.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.picasso_ofilm_macro_s5k5e9yx04.bin \
@@ -256,7 +252,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
-    com.qti.sensor.picasso_wide_ov48b2q \
     vendor.qti.hardware.audiohalext@1.0-impl \
     libacdb-fts \
     libacdbloader \
@@ -300,6 +295,7 @@ PRODUCT_PACKAGES += \
     com.qti.sensor.picasso_rear_depth_gc02m1_mono \
     com.qti.sensor.picasso_s5k3t2 \
     com.qti.sensor.picasso_s5k5e9yx04 \
+    com.qti.sensor.picasso_wide_ov48b2q \
     com.arcsoft.node.deflicker \
     com.arcsoft.node.smoothtransition \
     com.arcsoft.node.superportrait \
