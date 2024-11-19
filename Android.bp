@@ -6,6 +6,7 @@ soong_namespace {
 	imports: [
 		"vendor/xiaomi/sm8250-common",
 		"hardware/qcom-caf/common/libqti-perfd-client",
+		"hardware/qcom-caf/sm8250",
 		"hardware/qcom-caf/wlan",
 		"hardware/xiaomi",
 		"vendor/qcom/opensource/display",
@@ -3313,7 +3314,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmialgoengine.so"],
-			shared_libs: ["libxmi_high_dynamic_range", "libMIAIHDRhvx_interface", "liblog", "libutils", "libcutils", "libhardware", "libnativewindow", "libEGL", "libion", "libGLESv2", "libmpbase", "libarcsoft_beautyshot", "libarcsoft_dualcam_refocus", "libarcsoft_portrait_lighting", "libarcsoft_portrait_lighting_c", "libarcsoft_distortion_correction", "libarcsoft_bodyslim", "libarcsoft_superportrait", "libmialgo_ie_capture", "libmialgo_utils", "libalhLDC", "libalAILDC", "libflaw", "libalCFR", "libHalSuperSensorServer", "libSuperSensor", "libSuperSensorCPU", "libmibokeh_712", "libsdk_sr", "libst_sr_models", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libxmi_high_dynamic_range", "libMIAIHDRhvx_interface", "liblog", "libutils", "libcutils", "libhardware", "libnativewindow", "libEGL", "libion", "libGLESv2", "libgrallocutils", "libmpbase", "libarcsoft_beautyshot", "libarcsoft_dualcam_refocus", "libarcsoft_portrait_lighting", "libarcsoft_portrait_lighting_c", "libarcsoft_distortion_correction", "libarcsoft_bodyslim", "libarcsoft_superportrait", "libmialgo_ie_capture", "libmialgo_utils", "libalhLDC", "libalAILDC", "libflaw", "libalCFR", "libHalSuperSensorServer", "libSuperSensor", "libSuperSensorCPU", "libmibokeh_712", "libsdk_sr", "libst_sr_models", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
